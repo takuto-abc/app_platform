@@ -1,5 +1,9 @@
 {
   "devDependencies": {
+    "@types/react-router-dom": "^5.3.3",
     "prettier": "^3.3.3"
+  },
+  "dependencies": {
+    "react-router-dom": "^6.28.0"
   }
 }
