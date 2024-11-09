@@ -1,7 +1,7 @@
 import app from './app';
 import connectDB from './utils/db';
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 
 // データベースに接続してからサーバーを起動
 connectDB().then(() => {
