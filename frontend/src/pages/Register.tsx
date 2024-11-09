@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import API from '../services/api'; // 修正済みのAPIインスタンスをインポート
+import API from '../services/api';
 import { useDispatch } from 'react-redux';
 import { setUser } from '../redux/slices/authSlice';
 import { useNavigate } from 'react-router-dom';

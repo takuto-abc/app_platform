@@ -1,12 +1,13 @@
+// src/pages/Dashboard.tsx
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { RootState } from '../redux/store';
+import { RootState, AppDispatch } from '../redux/store';
 import { clearUser } from '../redux/slices/authSlice';
 import { useNavigate } from 'react-router-dom';
 
 const Dashboard: React.FC = () => {
   const user = useSelector((state: RootState) => state.auth);
-  const dispatch = useDispatch();
+  const dispatch: AppDispatch = useDispatch();
   const navigate = useNavigate();
 
   const handleLogout = () => {

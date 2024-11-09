@@ -1,3 +1,4 @@
+// src/redux/slices/authSlice.ts
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 interface UserState {
@@ -16,12 +17,12 @@ const authSlice = createSlice({
   name: 'auth',
   initialState,
   reducers: {
-    setUser(state, action: PayloadAction<UserState>) {
+    setUser(state: UserState, action: PayloadAction<UserState>) { // 型を明示
       state.id = action.payload.id;
       state.username = action.payload.username;
       state.email = action.payload.email;
     },
-    clearUser(state) {
+    clearUser(state: UserState) { // 型を明示
       state.id = null;
       state.username = null;
       state.email = null;
