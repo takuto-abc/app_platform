@@ -7,10 +7,12 @@ dotenv.config();
 
 const app = express();
 
+// CORS設定
 app.use(cors({
   origin: 'http://localhost:3000', // フロントエンドのURLを指定
   credentials: true, // 必要に応じて
 }));
+
 app.use(express.json());
 
 // ルートの登録
